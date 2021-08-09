@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate register form with Jquery</title>
+    <link rel="stylesheet" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="form-wrapper">
+            <h1 class="text-center">Register</h1>
+            <form action="" id="signupForm">
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for=""> Name</label>
+                            <input type="text" name="name" class="form-control"></input>
+                        </div>
+                        <div class="col-6">
+                            <label for="">Email</label>
+                            <input type="email" name="email" class="form-control"></input>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="">Password</label>
+                            <input type="password" id="password" name="password" class="form-control"></input>
+                        </div>
+                        <div class="col-6">
+                            <label for="">Confirm password</label>
+                            <input type="password" name="confirm_password" class="form-control"></input>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <label for="">Gender</label>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" value="male" id="male">
+                            <label class="form-check-label" for="male">
+                                male
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" value="female" id="female">
+                            <label class="form-check-label" for="female">
+                                female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <label for="gender" class="error"></label>
+
+                <div class="row">
+                    <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="agree" id="agree">
+                            <label class="form-check-label" for="agree">
+                                Please agree to our policy
+                            </label>
+                            <label for="agree" class="error"></label>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" name="newsletter" id="newsletter">
+                            <label class="form-check-label" for="newsletter">
+                                I'd like to receive the newsletter
+                            </label>
+                        </div>
+
+
+                        <fieldset id="newsletter_topics">
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="marketflash" name="topic"
+                                    id="topic_marketflash">
+                                <label class="form-check-label" for="topic_marketflash">
+                                    Marketflash
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="fuzz" name="topic"
+                                    id="topic_fuzz">
+                                <label class="form-check-label" for="topic_fuzz">
+                                    Latest fuzz
+                                </label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="digester" name="topic"
+                                    id="topic_digester">
+                                <label class="form-check-label" for="topic_digester">
+                                    Mailing list digester
+                                </label>
+                            </div>
+                            <label for="topic" class="error"></label>
+                    </div>
+                </div>
+
+                </fieldset>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-success px-5"> Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="public/js/jquery-3.6.0.min.js"></script>
+    <script src="public/js/jquery.validate.min.js"></script>
+    <script src="public/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+body {
+     background-color: blueviolet;
+}
+
+.error{
+   color: red;
+   font-size: 12px; 
+   margin-bottom: 0;
+}
+
+.form-wrapper {
+    position: absolute;
+    width: 60%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: white;
+    box-shadow: 1px 1px 5px #999;
+    border-radius: 5px;
+    padding: 20px ;
+}
